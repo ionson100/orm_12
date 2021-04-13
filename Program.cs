@@ -16,7 +16,11 @@ namespace TestSimpleOrm
     {
         static Program()
         {
-            new Configure("Server=127.0.0.1;Port=5432;Database=testorm;User Id=postgres;Password=*****;", ProviderName.Postgresql, "c:\\testorm.txt");
+#if DEBUG
+            new Configure("Server=127.0.0.1;Port=5432;Database=testorm;User Id=postgres;Password=****;", ProviderName.Postgresql, "c:\\testorm.txt");
+            return;
+#endif
+            new Configure("Server=127.0.0.1;Port=5432;Database=testorm;User Id=postgres;Password=****;", ProviderName.Postgresql, null);
         }
         static void Main(string[] args)
         {
