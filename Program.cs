@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using NpgsqlTypes;
 using ORM_1_21_;
 using ORM_1_21_.Attribute;
 using ORM_1_21_.Transaction;
